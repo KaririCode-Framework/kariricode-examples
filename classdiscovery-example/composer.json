@@ -1,0 +1,26 @@
+{
+    "name": "kariricode/classdiscovery-example",
+    "description": "Real-world examples for kariricode/classdiscovery — validating the discovery library",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4",
+        "kariricode/class-discovery": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "KaririCode\\ClassDiscovery\\Example\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../kariricode-classdiscovery",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

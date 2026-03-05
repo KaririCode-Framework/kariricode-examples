@@ -1,0 +1,15 @@
+# Composer dependencies — never commit vendor/
+*/vendor/
+vendor/
+
+# OS and editor artifacts
+.DS_Store
+.idea/
+*.swp
+*.swo
+.vscode/
+
+# PHP coverage and cache
+.phpunit.cache/
+.phpunit.result.cache
+coverage/

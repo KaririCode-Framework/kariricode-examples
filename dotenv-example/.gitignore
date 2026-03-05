@@ -1,0 +1,5 @@
+vendor/
+.kcode/
+.env.encrypted
+cache/
+*.cache

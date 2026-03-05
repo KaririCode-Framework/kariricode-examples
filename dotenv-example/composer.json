@@ -1,0 +1,41 @@
+{
+    "name": "kariricode/dotenv-example",
+    "description": "Example project validating all features of kariricode/dotenv",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4",
+        "kariricode/dotenv": "@dev"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../kariricode-dotenv",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "KaririCode\\Examples\\Dotenv\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "scripts": {
+        "run": "php public/index.php",
+        "run:basic": "php examples/01-basic-loading.php",
+        "run:types": "php examples/02-type-casting.php",
+        "run:validation": "php examples/03-validation-dsl.php",
+        "run:schema": "php examples/04-schema-validation.php",
+        "run:encryption": "php examples/05-encryption.php",
+        "run:processors": "php examples/06-processors.php",
+        "run:bootenv": "php examples/07-boot-env.php",
+        "run:all": "php run-all.php"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

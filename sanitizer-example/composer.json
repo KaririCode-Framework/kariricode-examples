@@ -1,0 +1,28 @@
+{
+    "name": "kariricode/sanitizer-example",
+    "description": "Real-world examples for the kariricode/sanitizer library",
+    "type": "project",
+    "require": {
+        "php": "^8.4",
+        "kariricode/sanitizer": "@dev"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../kariricode-sanitizer",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}

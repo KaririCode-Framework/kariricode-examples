@@ -1,0 +1,77 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "9443323a4098179007ea5ca33429e91b",
+    "packages": [
+        {
+            "name": "kariricode/class-discovery",
+            "version": "dev-develop",
+            "dist": {
+                "type": "path",
+                "url": "../../kariricode-classdiscovery",
+                "reference": "08f37a7db162510f14769bc9eae45d48bf20a347"
+            },
+            "require": {
+                "php": "^8.4"
+            },
+            "suggest": {
+                "kariricode/cache": "For PSR-16 cache integration via CacheBridge",
+                "kariricode/configurator": "For environment-aware discovery configuration",
+                "kariricode/dependency-injection": "For PSR-11 container integration"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "KaririCode\\ClassDiscovery\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "KaririCode\\ClassDiscovery\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "quality": [
+                    "kcode quality"
+                ],
+                "test": [
+                    "kcode test --coverage"
+                ],
+                "analyse": [
+                    "kcode analyse"
+                ],
+                "cs:fix": [
+                    "kcode cs:fix"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Walmir Silva",
+                    "email": "walmir.silva@kariricode.org"
+                }
+            ],
+            "description": "PHP 8.4+ class discovery component with attribute scanning, token-based parsing, multi-tier caching, and dependency analysis. Part of the KaririCode Framework ecosystem.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {},
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^8.4"
+    },
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}

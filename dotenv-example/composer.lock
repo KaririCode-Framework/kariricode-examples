@@ -1,0 +1,100 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "6f9fd6b10bb3d33d95707742e15076cb",
+    "packages": [
+        {
+            "name": "kariricode/dotenv",
+            "version": "dev-develop",
+            "dist": {
+                "type": "path",
+                "url": "../../kariricode-dotenv",
+                "reference": "577eabc544d7091931ce9ec3ac6b5f2c1c197330"
+            },
+            "require": {
+                "php": "^8.4"
+            },
+            "suggest": {
+                "ext-openssl": "Required for encrypted .env values (AES-256-GCM)"
+            },
+            "bin": [
+                "bin/kariricode-dotenv"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "KaririCode\\Dotenv\\": "src/"
+                },
+                "files": [
+                    "src/env.php"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "KaririCode\\Dotenv\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit"
+                ],
+                "analyse": [
+                    "phpstan analyse"
+                ],
+                "cs-fix": [
+                    "php-cs-fixer fix"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Walmir Silva",
+                    "email": "community@kariricode.org"
+                }
+            ],
+            "description": "The only PHP dotenv with auto type casting, AES-256-GCM encryption, OPcache caching, fluent validation DSL, environment-aware loading, and CLI tooling — zero dependencies, PHP 8.4+, ARFA 1.3.",
+            "homepage": "https://kariricode.org",
+            "keywords": [
+                "cache",
+                "configuration",
+                "dotenv",
+                "encrypted",
+                "env",
+                "environment-variables",
+                "framework",
+                "immutable",
+                "kariricode",
+                "php",
+                "php84",
+                "type-safe",
+                "validation"
+            ],
+            "support": {
+                "issues": "https://github.com/KaririCode-Framework/kariricode-dotenv/issues",
+                "source": "https://github.com/KaririCode-Framework/kariricode-dotenv"
+            },
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "kariricode/dotenv": 20
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^8.4"
+    },
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}
