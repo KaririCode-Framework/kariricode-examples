@@ -1,0 +1,28 @@
+{
+    "name": "kariricode/validator-example",
+    "description": "Real-world examples for the kariricode/validator library — 52 rules, all usage patterns",
+    "type": "project",
+    "require": {
+        "php": "^8.4",
+        "kariricode/validator": "@dev"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../kariricode-validator",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}
